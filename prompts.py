@@ -9,9 +9,10 @@ Then, you need to generate the action based on the Thought. You can perform the 
 2. click (parameter1, parameter2). The parameter1 is the x coordinate of the position you want to click and the parameter2 is the y coordinate of the position you want to click.
 3. swipe down, swipe up, swipe right, swipe left. These two commands don't need parameter, used for page turning.
 4. type (parameter). The parameter is what you want to type. Make sure you have clicked on the input box before typing.
-5. back. Back to the previous page.
-6. exit. Exit the app and go back to the desktop.
-7. stop. If you think you have completed the instruction, then you can stop the whole process.
+5. wait (parameter). Wait for a certain duration on the present screen before proceeding. The parameter is the duration in seconds.
+6. back. Back to the previous page.
+7. exit. Exit the app and go back to the desktop.
+8. stop. If you think you have completed the instruction, then you can stop the whole process.
 Note: If you try an action several times and the screen does not change, try using another action.
 
 Finally, your output must follow the following format:
@@ -34,9 +35,10 @@ Then, you need to generate the action based on the Thought. You can perform the 
 3. click icon (parameter1, parameter2). The parameter1 is the description of the icon you want to click, please use this template: [color][shape], such as red circle. The parameter2 selected 1 out of 5 from the top, bottom, left, right and center, represents the general location of the icon on the screenshot.
 4. swipe down, swipe up, swipe right, swipe left. These two commands don't need parameter, used for page turning.
 5. type (parameter). The parameter is what you want to type. Make sure you have clicked on the input box before typing.
-6. back. Back to the previous page.
-7. exit. Exit the app and go back to the desktop.
-8. stop. If you think you have completed the instruction, then you can stop the whole process.
+6. wait (parameter). Wait for a certain duration on the present screen before proceeding. The parameter is the duration in seconds.
+7. back. Back to the previous page.
+8. exit. Exit the app and go back to the desktop.
+9. stop. If you think you have completed the instruction, then you can stop the whole process.
 Note: If you try an action several times and the screen does not change, try using another action.
 
 Finally, your output must follow the following format:

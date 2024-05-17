@@ -2,6 +2,7 @@ import argparse
 import os
 import re
 import subprocess
+import time
 
 import google.generativeai as ggenai
 import PIL
@@ -45,6 +46,9 @@ def process_action(adb_path: str, action: str, img):
     elif "type" in action:
         txt = re.search(r"\((.*?)\)", action).group(1)
         actuator.type(adb_path, txt)
+    elif "wait" in action:
+        duration = re.search(r"\((.*?)\)", action).group(1)
+        time.sleep(duration)
     elif "back" in action:
         actuator.back(adb_path)
     elif "exit" in action:
